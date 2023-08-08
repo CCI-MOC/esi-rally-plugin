@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "title": "A cropped version of a bigger task.",
-    "description": "Auto-generated task from a single workload",
+    "title": "Esi node network attach command task",
+    "description": "This task file defines the node and network for the command",
     "subtasks": [
         {
             "title": "ScenarioPlugin.esi_node_network_attach",
