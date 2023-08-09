@@ -8,7 +8,7 @@ This repository contains custom Rally plugins and task files to test ESI command
     4. Create a deployment by: rally deployment create --file=env.json --name=env
     5. Finally source the environment by: source ~/.rally/openrc
     6. git clone https://github.com/CCI-MOC/esi-rally-plugin.git
-    7. rally --plugin-paths rally/esi_node_network_attach_plugin.py task start rally/esi_node_network_attach_task.yaml 
+    7. rally --plugin-paths rally/esi_node_network_attach_plugin.py task start rally/esi_node_network_attach_task.yaml --task-args '{"node_name": "<node-name>", "network_name": "<network-name>"}'
 
 ## Custom Plugin
 The esi_node_network_attach_plugin.py file contains the custom Rally plugin. This plugin defines the EsiNodeNetworkAttachScenario class, which implements the benchmarking scenario using the esi_node_network_attach method. For more information on how to write a Scenerio and use it as aPlugin you can visit https://docs.openstack.org/developer/rally/plugins/implementation/scenario_plugin.html
