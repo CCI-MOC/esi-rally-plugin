@@ -9,7 +9,7 @@
             "scenario": {
                 "ScenarioPlugin.esi_node_network_attach": {
                     "node": {{node_name}},
-                    "network": {{network name}},
+                    "network": {{network_name}},
                     "port": null,
                     "trunk": null,
                     "mac_address": null
