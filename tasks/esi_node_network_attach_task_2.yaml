@@ -1,0 +1,31 @@
+{
+    "version": 2,
+    "title": "Esi node network attach command task",
+    "description": "This task file defines the node and network for the command.",
+    "subtasks": [
+        {
+            "title": "ScenarioPlugin.esi_node_network_attach",
+            "description": "",
+            "scenario": {
+                "ScenarioPlugin.esi_node_network_attach": {
+                    "node": "dell-2",
+                    "network": "storage",
+                    "port": null,
+                    "trunk": null,
+                    "mac_address": null
+                }
+            },
+            "contexts": {},
+            "runner": {
+                "serial": {}
+            },
+            "hooks": [],
+            "sla": {
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        }
+    ]
+}
+
