@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "title": "Esi node provisioning task",
+    "description": "This task file defines the node provisioning command.",
+    "subtasks": [
+        {
+            "title": "ScenarioPlugin.esi_node_provisioning",
+            "description": "",
+            "scenario": {
+                "ScenarioPlugin.esi_node_provisioning": {
+                    "image": {{image}},
+                    "network": {{network}},
+                    "candidate": {{candidate}},
+                    "ssh_public_key": {{ssh_public_key}}
+                }
+            },
+            "contexts": {},
+            "runner": {
+                "serial": {}
+            },
+            "hooks": [],
+            "sla": {
+                "failure_rate": {
+                    "max": 0
+                }
+            }
+        }
+    ]
+}
